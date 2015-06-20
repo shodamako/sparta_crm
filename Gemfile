@@ -46,4 +46,3 @@ group :development, :test do
   gem 'faker'
   gem 'faker-japanese'
 end
-
