@@ -26,12 +26,12 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> 文字以上を入力)</em>
     <% end %><br />
-    <%= f.password_field :password, class: "form-control" %>
+    <%= f.password_field :password,autocomplete: "off", class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation, "だからパスワード何" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off"%>
   </div>
 
   <div class="actions">
