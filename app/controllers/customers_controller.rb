@@ -3,7 +3,7 @@ class CustomersController < ApplicationController
 
 
   def index
- #   @customers = Customer.page(params[:page])
+   # @customers = Customer.page(params[:page])
   @q = Customer.search(params[:q])
   @customers = @q.result.page(params[:page])
   end
